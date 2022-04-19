@@ -32,7 +32,7 @@ function App() {
     if (messageList.length>0 && messageList[messageList.length-1].author !== 'Роберт Левандовски'){
       time = setInterval(() => {
         setMessageList([...messageList,newPost])}, 1500);
-      const newPost = {author:'Роберт Левандовски', text: `Hi, ${userName} !!!!`}
+      const newPost = {author:'Роберт Левандовски', text: `Hi, ${userName} !!!!`}// Кажется эта строчка не совсем корректна)
     }
     return () => {
 
